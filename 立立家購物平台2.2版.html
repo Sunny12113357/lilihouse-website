@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台東立立家購物平台 - 關於我們 | 代購團購・生鮮蔬果・生活用品</title>
+    <meta name="description" content="台東立立家購物平台提供專業代購團購服務，包含生鮮蔬果、生活用品、雜貨食品。儲值優惠最高折500元，台東市面交取貨，全台宅配服務。">
+    <meta name="keywords" content="台東立立家,台東代購,團購平台,生鮮蔬果,生活用品,儲值優惠,面交取貨,立立好室食">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="陳立容">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="台東立立家購物平台 - 專業代購團購服務">
+    <meta property="og:description" content="提供生鮮蔬果、生活用品代購團購，儲值優惠最高折500元，台東市面交取貨服務">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:site_name" content="台東立立家購物平台">
+    
+    <!-- JSON-LD 結構化資料 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "台東立立家購物平台",
+        "alternateName": "立立好室．食",
+        "description": "台東專業代購團購平台，提供生鮮蔬果、生活用品、雜貨食品等商品服務",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "開封街599號",
+            "addressLocality": "台東市",
+            "addressRegion": "台東縣",
+            "addressCountry": "台灣"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 22.7569,
+            "longitude": 121.1444
+        },
+        "telephone": "089-331220",
+        "email": "jill70088@yahoo.com.tw",
+        "url": "https://www.facebook.com/groups/1304947882943166",
+        "openingHours": [
+            "Mo-Fr 09:00-20:00",
+            "Sa-Su 10:00-18:00"
+        ],
+        "paymentAccepted": ["現金", "行動支付", "信用卡"],
+        "priceRange": "$$",
+        "serviceType": "代購服務",
+        "areaServed": {
+            "@type": "Place",
+            "name": "台東縣"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "商品服務目錄",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Product",
+                        "name": "生鮮蔬果"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Product", 
+                        "name": "生活用品"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Product",
+                        "name": "代購服務"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Product",
+                        "name": "團購服務"
+                    }
+                }
+            ]
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "089-331220",
+            "contactType": "customer service",
+            "availableLanguage": ["Chinese"],
+            "contactOption": "TollFree"
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "陳立容"
+        }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft JhengHei', 'Noto Sans TC', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 50%, #6c5ce7 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .main-content {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(15px);
+            border-radius: 25px;
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.2);
+            padding: 50px;
+            margin: 20px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .main-content::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(116, 185, 255, 0.05), transparent);
+            transform: rotate(45deg);
+            pointer-events: none;
+        }
+        
+        .brand-header {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .brand-logo {
+            font-size: 3rem;
+            background: linear-gradient(135deg, #74b9ff, #6c5ce7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .brand-subtitle {
+            font-size: 1.3rem;
+            color: #636e72;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+        
+        .brand-tagline {
+            background: linear-gradient(135deg, #fd79a8 0%, #fdcb6e 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            display: inline-block;
+            box-shadow: 0 10px 30px rgba(253, 121, 168, 0.3);
+        }
+        
+        h2 {
+            color: #2d3436;
+            font-size: 1.8rem;
+            margin: 40px 0 25px 0;
+            border-left: 6px solid #74b9ff;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .service-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            border: 2px solid #e9ecef;
+            border-radius: 20px;
+            padding: 30px;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #74b9ff, #6c5ce7);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+            border-color: #74b9ff;
+        }
+        
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+            background: linear-gradient(135deg, #74b9ff, #6c5ce7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .feature-highlight {
+            background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin: 30px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .feature-highlight::before {
+            content: '✨';
+            position: absolute;
+            font-size: 4rem;
+            opacity: 0.1;
+            right: 20px;
+            top: 10px;
+        }
+        
+        .warning-section {
+            background: linear-gradient(135deg, #fd79a8 0%, #fdcb6e 100%);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px 0;
+            color: white;
+        }
+        
+        .info-section {
+            background: linear-gradient(135deg, #a8e6cf 0%, #88d8c0 100%);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px 0;
+            color: #2d3436;
+        }
+        
+        .payment-methods {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 25px 0;
+        }
+        
+        .payment-item {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+            color: #2d3436;
+        }
+        
+        .loyalty-program {
+            background: linear-gradient(135deg, #fd79a8 0%, #6c5ce7 100%);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px 0;
+            color: white;
+            text-align: center;
+        }
+        
+        .loyalty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .loyalty-item {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            font-weight: bold;
+        }
+        
+        .contact-section {
+            background: linear-gradient(135deg, #2d3436 0%, #636e72 100%);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 30px 0;
+            color: white;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 25px 0;
+        }
+        
+        .contact-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+        
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+        
+        .contact-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #74b9ff;
+        }
+        
+        .hours-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .hours-table th,
+        .hours-table td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .hours-table th {
+            background: rgba(255, 255, 255, 0.2);
+            font-weight: bold;
+        }
+        
+        .cta-buttons {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #74b9ff 0%, #6c5ce7 100%);
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.4s ease;
+            margin: 10px;
+            box-shadow: 0 10px 30px rgba(116, 185, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(116, 185, 255, 0.4);
+            color: white;
+            text-decoration: none;
+        }
+        
+        .cta-button:hover::before {
+            left: 100%;
+        }
+        
+        .highlight-text {
+            background: linear-gradient(135deg, #fdcb6e 0%, #fd79a8 100%);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        
+        .floating-elements {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .floating-shape {
+            position: absolute;
+            background: rgba(116, 185, 255, 0.1);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .floating-shape:nth-child(1) {
+            width: 80px;
+            height: 80px;
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+        
+        .floating-shape:nth-child(2) {
+            width: 60px;
+            height: 60px;
+            top: 60%;
+            right: 15%;
+            animation-delay: 2s;
+        }
+        
+        .floating-shape:nth-child(3) {
+            width: 100px;
+            height: 100px;
+            bottom: 20%;
+            left: 20%;
+            animation-delay: 4s;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                padding: 30px 20px;
+                margin: 10px;
+            }
+            
+            .brand-logo {
+                font-size: 2rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .loyalty-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+            
+            .payment-methods {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-elements">
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+    </div>
+    
+    <div class="container">
+        <div class="main-content">
+            <div class="brand-header">
+                <h1 class="brand-logo">台東立立家購物平台</h1>
+                <p class="brand-subtitle">立立好室．食</p>
+                <div class="brand-tagline">您的生活購物好夥伴</div>
+            </div>
+
+            <div class="feature-highlight">
+                <h2>🌟 為什麼選擇立立家？</h2>
+                <p>我們不只是代購平台，更是您生活品質的提升者。從新鮮蔬果到日常用品，從團購優惠到個人客製化服務，立立家致力於為台東鄉親提供最便利、最優質的購物體驗。</p>
+            </div>
+
+            <h2>🛍️ 我們的專業服務</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <span class="service-icon">🥬</span>
+                    <h3>新鮮蔬果食品</h3>
+                    <p>嚴選優質生鮮蔬果，從產地直送到您手中，確保新鮮度與營養價值。</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🛒</span>
+                    <h3>專業代購服務</h3>
+                    <p>無論國內外商品，我們都能為您精心代購，省去您親自跑腿的時間。</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">👥</span>
+                    <h3>超值團購活動</h3>
+                    <p>定期舉辦各式團購，讓您以更優惠的價格買到心儀商品。</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🏠</span>
+                    <h3>生活雜貨用品</h3>
+                    <p>從清潔用品到居家小物，滿足您的日常生活所需。</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">💫</span>
+                    <h3>商品許願服務</h3>
+                    <p>找不到想要的商品？歡迎許願！我們會盡力為您尋找。</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🎯</span>
+                    <h3>不定時現貨出清</h3>
+                    <p>把握限時優惠活動，以超值價格帶走優質商品。</p>
+                </div>
+            </div>
+
+            <div class="warning-section">
+                <h3>⚠️ 團購重要須知</h3>
+                <div style="margin-top: 20px;">
+                    <p><strong>📋 團購風險說明：</strong></p>
+                    <ul style="margin: 15px 0; padding-left: 20px;">
+                        <li>團購商品可能出現提早到貨、準時到貨或斷貨情況</li>
+                        <li>請仔細評估後再下單，能接受風險者再購買</li>
+                        <li>請密切注意團購、預購商品的結單時間</li>
+                        <li>錯過結單時間需等待下一批商品</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h3>📱 智能訂單管理系統</h3>
+                <p><strong>📞 到貨通知方式：</strong>所有商品到貨通知皆透過 <span class="highlight-text">Facebook Messenger 私訊</span> 發送</p>
+                <p><strong>⚠️ 重要提醒：</strong>沒有收到通知即表示商品尚未到貨</p>
+                
+                <div style="margin-top: 25px; text-align: center;">
+                    <h4>🔍 線上查詢功能</h4>
+                    <p>透過Messenger 私訊，您可以詢問小幫手：</p>
+                    <ul style="text-align: left; margin: 15px 0; max-width: 400px; margin-left: auto; margin-right: auto;">
+                        <li>✅ 已訂購商品狀態</li>
+                        <li>📦 確認已到貨商品</li>
+                        <li>🚚 追蹤已出貨商品</li>
+                    </ul>
+                    <p><strong>請記得開啟通知功能以即時接收訊息！</strong></p>
+                    <a href="http://m.me/2317383838305737" class="cta-button" target="_blank" rel="noopener">立即查詢訂單狀態</a>
+                </div>
+            </div>
+
+            <h2>💳 便利付款方式</h2>
+            <div class="payment-methods">
+                <div class="payment-item">💰 現金付款</div>
+                <div class="payment-item">📱 行動支付</div>
+                <div class="payment-item">💳 信用卡刷卡</div>
+            </div>
+
+            <div class="loyalty-program">
+                <h3>🎁 儲值優惠方案</h3>
+                <p>儲值越多，折扣越大！立即加入我們的儲值優惠計劃：</p>
+                <div class="loyalty-grid">
+                    <div class="loyalty-item">儲值 $1,000<br><strong>折扣 $100</strong></div>
+                    <div class="loyalty-item">儲值 $2,000<br><strong>折扣 $200</strong></div>
+                    <div class="loyalty-item">儲值 $3,000<br><strong>折扣 $300</strong></div>
+                    <div class="loyalty-item">儲值 $4,000<br><strong>折扣 $400</strong></div>
+                    <div class="loyalty-item">儲值 $5,000<br><strong>折扣 $500</strong></div>
+                    <div class="loyalty-item">更多優惠<br><strong>依此類推</strong></div>
+                </div>
+            </div>
+
+            <h2>📦 多元配送服務</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <span class="service-icon">🏠</span>
+                    <h3>宅配到府</h3>
+                    <p>全台宅配服務，運費依商品體積大小合理計算</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🏪</span>
+                    <h3>便利店取貨</h3>
+                    <p>支援各大便利商店取貨服務，就近取貨超方便</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🤝</span>
+                    <h3>台東面交服務</h3>
+                    <p>台東市區提供面交取貨，省運費又能當面檢查商品</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🔄</span>
+                    <h3>完善售後保障</h3>
+                    <p>商品如有瑕疵，我們提供完整的退換貨協助服務</p>
+                </div>
+            </div>
+
+            <div class="contact-section">
+                <h2 style="color: white; border-left-color: #74b9ff;">📍 台東面交取貨資訊</h2>
+                
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <h4>取貨地址</h4>
+                        <p><strong>台東市開封街599號</strong><br>
+                        (舊呂升業骨科診所)</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <h4>聯絡電話</h4>
+                        <p><strong>089-331220</strong></p>
+                    </div>
+                </div>
+
+                <div style="margin: 30px 0;">
+                    <h3>⏰ 取貨營業時間</h3>
+                    <table class="hours-table">
+                        <thead>
+                            <tr>
+                                <th>營業日</th>
+                                <th>營業時間</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>週一至週五</strong></td>
+                                <td>上午 09:00 - 晚上 20:00</td>
+                            </tr>
+                            <tr>
+                                <td><strong>週六至週日</strong></td>
+                                <td>上午 10:00 - 晚上 18:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="text-align: center; margin-top: 15px; opacity: 0.8;">
+                        ※ 如無法在營業時間內取貨，請提前私訊告知安排
+                    </p>
+                </div>
+            </div>
+
+            <h2>📧 聯絡我們</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <h4>Facebook 社團</h4>
+                    <p><a href="https://www.facebook.com/groups/1304947882943166" target="_blank" rel="noopener" style="color: #74b9ff;">立立家購物社團</a></p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">💬</div>
+                    <h4>線上客服小幫手</h4>
+                    <p><a href="http://m.me/2317383838305737" target="_blank" rel="noopener" style="color: #74b9ff;">Messenger 私訊</a></p>
+                </div>
+            </div>
+
+            <div class="feature-highlight" style="margin-top: 50px;">
+                <h3>🎀 感謝您選擇立立家</h3>
+                <p>我們承諾提供最用心的服務、最優質的商品、最合理的價格。您的滿意是我們最大的動力，讓我們一起創造更美好的購物體驗！</p>
+                
+                <div class="cta-buttons" style="margin-top: 30px;">
+                    <a href="https://www.facebook.com/groups/1304947882943166" class="cta-button" target="_blank" rel="noopener">🔗 加入FB社團</a>
+                    <a href="http://m.me/2317383838305737" class="cta-button" target="_blank" rel="noopener">💬 線上客服</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
